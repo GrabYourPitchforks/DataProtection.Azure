@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "DataProtection.Azure": "1.0.0-*",
+    "Microsoft.Extensions.DependencyInjection": "1.0.0-rc2-final"
+  },
+
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "warningsAsErrors": true
+  },
+
+  "frameworks": {
+    "net451": { }
+  }
+}

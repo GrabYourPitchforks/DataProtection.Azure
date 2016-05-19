@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Microsoft.AspNetCore.DataProtection": "1.0.0-rc2-final",
+    "WindowsAzure.Storage": "6.2.0"
+  },
+
+  "buildOptions": {
+    "warningsAsErrors": true
+  },
+
+  "frameworks": {
+    "net451": { }
+  }
+}
