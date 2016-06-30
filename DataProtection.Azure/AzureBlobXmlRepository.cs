@@ -8,8 +8,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
-using Microsoft.AspNet.DataProtection.Repositories;
-using Microsoft.Framework.Logging;
+using Microsoft.AspNetCore.DataProtection.Repositories;
+using Microsoft.Extensions.Logging;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 

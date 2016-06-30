@@ -1,6 +1,6 @@
 ﻿using System;
-using Microsoft.AspNet.DataProtection;
-using Microsoft.Framework.DependencyInjection;
+using Microsoft.AspNetCore.DataProtection;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.WindowsAzure.Storage;
 
 namespace Runner
@@ -32,11 +32,9 @@ namespace Runner
             // Configure
 
             ServiceCollection serviceCollection = new ServiceCollection();
-            serviceCollection.AddDataProtection();
-            serviceCollection.ConfigureDataProtection(configurationObject =>
-            {
-                configurationObject.PersistKeysToAzureBlobStorage(container, "keys.xml");
-            });
+            serviceCollection.AddDataProtection()
+                .PersistKeysToAzureBlobStorage(container, "keys.xml");
+            
             var services = serviceCollection.BuildServiceProvider();
 
             // Run a sample payload
